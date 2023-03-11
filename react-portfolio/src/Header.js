@@ -3,18 +3,18 @@ import { NavLink } from 'react-router-dom';
 
 
 
-function Home() {
+function Header() {
 
   return (
 
     <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-light bg-light justify-content-end">
   {/* <a className="navbar-brand" */}
    
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
     <div class="navbar-nav">
         <NavLink 
         to="/Home"
@@ -42,8 +42,7 @@ function Home() {
         Contact
         </NavLink>
 
-        
-     
+    
     </div>
     
     {/* {<h1>React Portfolio</h1>} */}
@@ -57,4 +56,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Header
